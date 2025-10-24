@@ -1,80 +1,64 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "KwikUI Quickstart"
+description: "How do I create my first project in Kwik UI?"
 ---
 
-## Get started in three steps
+Starting your first project in [**KwikUI**](https://www.kwikui.com/) is quick, simple, and requires no coding knowledge. Whether you’re working with a mockup, a site screenshot, or a full design, KwikUI helps you transform it into working prompts and even ReactJS code in just a few clicks.
 
-Get your documentation site running locally and make your first customization.
+In this guide, we’ll walk you through every step to create your first project on KwikUI, along with a pro tip to make your results even better.
 
-### Step 1: Set up your local environment
+**Step 1: Sign In to KwikUI**
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+Head over to [kwikui.com](https://kwikui.com) and log in to your account. If you don’t have one yet, creating a new account only takes a minute.
 
-### Step 2: Deploy your changes
+**Step 2: Start a New Project**
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+Once inside the dashboard, click on **New Project → Upload**.\
+Here, you’ll need to upload either:
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+- A **mockup** of your website or app, or
+- A **screenshot** of your site.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+**Pro tip**: Always use a clear, full-width screenshot that includes the entire header or navbar. This ensures KwikUI can detect navigation elements correctly.
 
-### Step 3: Go live
+**Step 3: Review Suggested Pages**
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+After your upload, KwikUI will automatically scan your header or navbar to suggest the pages it identifies.
 
-## Next steps
+- Review these suggestions carefully.
+- Add or remove pages depending on your site structure.
 
-Now that you have your docs running, explore these key features:
+This step saves you time by auto-detecting menus and preventing missed links.
 
-<CardGroup cols={2}>
+**Step 4: Generate Project**
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+Next, click on Create Project.
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+KwikUI will create ready-to-use prompts for each page, which you can later copy into code-generation tools like Lovable, Bolt, or Cursor.
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+**Step 5: Download the project files**
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+**<u>For Cursor/ Windsurf:</u>**
 
-</CardGroup>
+From your saved project:
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+1. Download the project files
+2. Put them inside an empty project in cursor.
+3. Run @1 file
+4. Accept everything.
+
+**<u>For tools like Lovable, replit, v0:</u>**
+
+1. Open the project
+2. Copy the contents of the UI files
+3. Paste it in lovable one-by-one
+
+**Final Tip for Best Results.**
+
+When uploading your design or screenshot, make sure it captures the full header/navbar clearly. 
+
+You can use KwikSnap, inhouse chrome extension for efficient visible and long form screenshot. This gives KwikUI the context it needs to generate the most accurate page suggestions and prompts.
+
+And that’s it! You’ve created your very first project in KwikUI!
+
+With just a screenshot, KwikUI helps you jump from design to code in minutes, not hours. Whether you’re experimenting with ideas, building prototypes, or generating production-ready NextJS code, this workflow makes it effortless.
