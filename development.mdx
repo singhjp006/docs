@@ -1,94 +1,73 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Accepted Screenshot Type"
+description: "What kind of screenshot works best for page detection?"
 ---
 
-<Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
-</Info>
+When you upload a website screenshot to KwikUI, our system uses that image to automatically detect key navigation elements and infer which pages your project should include. The quality of your screenshot directly impacts how accurately KwikUI can map out your site structure.
 
-Follow these steps to install and run Mintlify on your operating system.
+So, what kind of screenshot works best for page detection? Let’s break it down.
 
-<Steps>
-<Step title="Install the Mintlify CLI">
+**1. Capture the Full Header or Navbar**
 
-```bash
-npm i -g mint
-```
-</Step>
+Your screenshot should always include:
 
-<Step title="Preview locally">
+- **The logo** (top-left, where most brands place it)
+- **Menu items** like “Home,” “About,” “Services,” “Contact”
+- **Call-to-action (CTA) buttons**, such as _Sign Up_ or _Get Started_
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+**Why?**\
+Because KwikUI primarily reads the header/navigation bar to identify the key pages of your website. If your screenshot cuts off the header, the system may miss important page signals. This leads to incomplete or inaccurate project setup.
 
-```bash
-mint dev
-```
+💡 _Tip:_ Think of it as giving KwikUI the roadmap. Without the header, it’s like asking someone to navigate without a map.
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+**2. Use a Sharp, High-Contrast Image**
 
-</Step>
-</Steps>
+Avoid uploading screenshots that are:
 
-## Custom ports
+- Blurry
+- Overly compressed
+- Low resolution
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
+**Why?**\
+A sharp, high-contrast image helps KwikUI recognize text, icons, and layout elements more precisely. Poor image quality increases the chance of misreads—especially when menu items or CTA buttons use light fonts on light backgrounds.
 
-```bash
-mint dev --port 3333
-```
+💡 _Pro Move:_ Take a direct desktop screenshot (e.g., with your browser’s built-in screenshot tool) instead of snapping a photo with your phone.
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+**3. Stick to the Default Desktop View**
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+When taking your screenshot, capture the website in its default desktop state, before opening dropdown menus or toggling overlays.
 
-## Mintlify versions
+**Why?**\
+Dropdowns and overlays can clutter the navigation area and confuse page detection. KwikUI works best with a clean, default view where the primary navigation is visible but not expanded.
 
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+💡 _Example:_ If your site has a “Products” menu with 10 dropdown items, keep it closed in the screenshot. KwikUI will still identify “Products” as a main page.
 
-```bash
-npm mint update
-```
+**4. Make Sure Sticky Headers Are Visible**
 
-## Validating links
+Many modern sites use sticky headers, navigation bars that remain visible as you scroll.
 
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
+If your website has one, capture a state where the sticky header is clearly visible. This ensures KwikUI can correctly interpret the navigation across different scrolling positions.
 
-```bash
-mint broken-links
-```
+💡 _Tip:_ Scroll down slightly until the sticky header locks into place, then take your screenshot.
 
-## Deployment
+**Why These Guidelines Matter?**
 
-If the deployment is successful, you should see the following:
+KwikUI relies on the visual cues in your header/navbar to automatically infer which pages should be included in your project. The better your screenshot, the less manual correction you’ll need later.
 
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
+Think of it like this: if your header is your website’s blueprint, your screenshot is the scanned copy KwikUI reads. **Clearer scans = better results.**
 
-## Code formatting
+**Bonus: File Upload Guidelines**
 
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
+Besides the screenshot quality, it’s also important to follow file upload best practices:
 
-## Troubleshooting
+- **File size:** Upload screenshots that are optimized (not too large, not too compressed).
+- **File type:** Standard formats like PNG or JPEG work best.
 
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
+If you want KwikUI to detect your pages with minimal effort on your part, give it the clearest possible screenshot of your site’s header.
 
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of the CLI: `npm remove -g mint`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall the CLI: `npm i -g mint`
-  </Accordion>
+✅ Include the full navbar (logo, menu items, CTAs)\
+✅ Use a sharp, high-quality image\
+✅ Capture the default desktop view\
+✅ Ensure sticky headers are visible
 
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the `~/.mintlify` folder. Then run `mint dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the latest CLI version? Check out the [CLI changelog](https://www.npmjs.com/package/mintlify?activeTab=versions).
+Follow these tips, and you’ll save time while setting up your project, letting KwikUI do the heavy lifting for you.
