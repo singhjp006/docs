@@ -3,10 +3,10 @@
   "theme": "aspen",
   "name": "KwikUI Help",
   "metadata": {
-    "og:image": "https://docs.kwikui.com/images/og-image.png",
+    "og:image": "https://www.kwikui.com/landing-og.jpeg",
     "og:image:width": "1200",
     "og:image:height": "630",
-    "twitter:image": "https://docs.kwikui.com/images/og-image.png",
+    "twitter:image": "https://www.kwikui.com/landing-og.jpeg",
     "twitter:card": "summary_large_image"
   },
   "colors": {
