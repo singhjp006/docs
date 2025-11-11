@@ -17,6 +17,7 @@
             "group": "Getting started",
             "pages": [
               "index",
+              "get-started",
               "quickstart",
               "development"
             ]
@@ -32,6 +33,7 @@
           {
             "group": "How-to Guides",
             "pages": [
+              "how-to",
               "how-to-guides/find-my-projects",
               "how-to-guides/add-page-manually",
               "how-to-guides/best-results-with-ai-tools"
