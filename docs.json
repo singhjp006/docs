@@ -2,16 +2,22 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
   "name": "KwikUI Help",
+  "metadata": {
+    "og:image": "https://docs.kwikui.com/images/og-image.png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "twitter:image": "https://docs.kwikui.com/images/og-image.png",
+    "twitter:card": "summary_large_image"
+  },
   "colors": {
     "primary": "#FFD23B",
     "light": "#FFD23B",
-    "dark": "#F8A129",
-    "background": {
+    "dark": "#F8A129"
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
       "dark": "#000000"
-    },
-    "anchors": {
-      "from": "#FFD23B",
-      "to": "#F8A129"
     }
   },
   "favicon": "/favicon.svg",
