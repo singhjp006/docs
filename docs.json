@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "maple",
   "name": "KwikUI Help",
   "metadata": {
     "og:image": "https://www.kwikui.com/landing-og.jpeg",
@@ -19,6 +19,10 @@
       "light": "#FFFFFF",
       "dark": "#000000"
     }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": false
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -85,12 +89,20 @@
         {
           "anchor": "Sign Up",
           "href": "https://app.kwikui.com/auth",
-          "icon": "right-to-bracket"
+          "icon": "right-to-bracket",
+          "color": {
+            "light": "#FFD23B",
+            "dark": "#FFD23B"
+          }
         },
         {
           "anchor": "Blog",
           "href": "https://pixorr.com/blog/",
-          "icon": "newspaper"
+          "icon": "newspaper",
+          "color": {
+            "light": "#FFD23B",
+            "dark": "#FFD23B"
+          }
         }
       ]
     }
