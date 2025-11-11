@@ -1,11 +1,18 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "dark",
   "name": "KwikUI Help",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#FFD23B",
+    "light": "#FFD23B",
+    "dark": "#F8A129",
+    "background": {
+      "dark": "#000000"
+    },
+    "anchors": {
+      "from": "#FFD23B",
+      "to": "#F8A129"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
