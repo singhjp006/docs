@@ -22,6 +22,31 @@
             ]
           },
           {
+            "group": "Understanding KwikUI",
+            "pages": [
+              "understanding-kwikui/whats-in-prompt",
+              "understanding-kwikui/what-happens-create-project",
+              "understanding-kwikui/how-pages-suggested"
+            ]
+          },
+          {
+            "group": "How-to Guides",
+            "pages": [
+              "how-to-guides/find-my-projects",
+              "how-to-guides/add-page-manually",
+              "how-to-guides/best-results-with-ai-tools"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/best-screenshot-for-detection",
+              "faq/why-one-screenshot",
+              "faq/upload-multiple-screenshots",
+              "faq/file-upload-requirements"
+            ]
+          },
+          {
             "group": "Customization",
             "pages": [
               "essentials/settings",

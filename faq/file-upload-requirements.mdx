@@ -1,0 +1,105 @@
+---
+title: "File Upload Requirements and Limitations"
+description: "Everything you need to know about file formats, sizes, and upload rules in KwikUI"
+---
+
+When working with KwikUI, uploading images is a simple yet precise process. To maintain security, performance, and consistency, KwikUI enforces strict validation rules for all uploads.
+
+Whether you're setting up your main project or customizing individual pages, the same checks apply. Here's everything you need to know.
+
+## Supported File Formats
+
+KwikUI only accepts a limited set of image file formats to ensure compatibility and security. Currently, you can upload:
+
+- **JPEG (.jpg, .jpeg)**
+- **PNG (.png)**
+- **GIF (.gif)**
+- **WebP (.webp)**
+
+<Warning>
+If your file is in another format (such as TIFF, BMP, or SVG), you'll need to convert it before uploading.
+</Warning>
+
+## File Size Limitations
+
+To keep your projects lightweight and fast, each image must be **under 4 MB**. This applies to both the main homepage upload and individual page uploads.
+
+<Note>
+Large images can slow down your site, so compressing them before uploading is highly recommended.
+</Note>
+
+If your image is too large, you'll see this error message:
+
+<Warning>
+"Image exceeds the 4 MB limit. Please upload a smaller file."
+</Warning>
+
+## Upload Quantity
+
+KwikUI currently only allows one image upload at a time:
+
+- 1 file for the main homepage upload
+- 1 file per detected page
+
+This keeps project management straightforward and prevents accidental bulk uploads.
+
+## Security & Validation
+
+KwikUI takes security seriously. Every uploaded file is checked against two criteria:
+
+1. **MIME type**: ensures the file's actual content matches its declared type
+2. **File extension**: double-checks that the file format is correct
+
+<Info>
+This dual validation prevents malicious uploads and ensures only genuine image files are accepted.
+</Info>
+
+## Common Error Messages
+
+KwikUI provides clear feedback when something goes wrong with your upload. Here are the two most common messages:
+
+<AccordionGroup>
+  <Accordion title="File Too Large">
+    **Error:** _"Image exceeds the 4 MB limit. Please upload a smaller file."_
+    
+    **Solution:** Compress your image using tools like TinyPNG or Squoosh before uploading.
+  </Accordion>
+  
+  <Accordion title="Unsupported Format">
+    **Error:** _"Unsupported image format. Please upload JPG, PNG, GIF or WebP."_
+    
+    **Solution:** Convert your file to one of the supported formats (JPEG, PNG, GIF, or WebP).
+  </Accordion>
+</AccordionGroup>
+
+## Consistent Validation
+
+It doesn't matter if you're uploading the main project image or images for individual pages—KwikUI applies the same validation rules across the board. This ensures a consistent and predictable experience.
+
+## Best Practices for Smooth Uploads
+
+To avoid errors and speed up your workflow, follow these quick tips:
+
+<CardGroup cols={2}>
+  <Card title="Use WebP or JPEG" icon="image">
+    For faster loading times and better compression
+  </Card>
+  <Card title="Compress Images" icon="compress">
+    Use tools like TinyPNG or Squoosh before uploading
+  </Card>
+  <Card title="Stick to Supported Formats" icon="check">
+    JPG, PNG, GIF, WebP only
+  </Card>
+  <Card title="Keep Under 4 MB" icon="gauge">
+    Smaller files = better performance
+  </Card>
+</CardGroup>
+
+## Summary
+
+KwikUI's strict upload rules may feel limiting at first, but they're designed to protect your projects and ensure smooth performance.
+
+<Check>
+By sticking to supported formats, compressing images, and keeping files under 4 MB, you'll avoid common upload issues and keep your site running at its best.
+</Check>
+
